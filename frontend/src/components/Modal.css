@@ -1,0 +1,113 @@
+/* src/components/Modal.css */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajustez l'opacité pour avoir un fond transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 200px;
+    width: 50%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.modal-close:hover {
+    transform: scale(1.2);
+    color: #ffffff; /* Netflix red */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Slightly reduced width */
+    background-color: #333; /* Slightly darker background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333; /* Dark border for input fields */
+    border-radius: 5px;
+    background-color: #444; /* Dark background for input fields */
+    color: white; /* Light text color */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #e50914; /* Netflix red on focus */
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #f40612; /* Slightly lighter red on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Button press effect */
+}
+
+a {
+    color: #e50914;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,142 @@
+/* Main container for the home page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: url('../images/background2.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+}
+
+/* Header containing the logo and buttons */
+.home-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Netflix logo */
+.home-logo {
+    max-width: 150px;
+}
+
+/* Container for the header buttons */
+.home-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for the header buttons */
+.home-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.home-button:hover {
+    background-color: #f40612;
+}
+
+/* Content area below the header */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Main title on the home page */
+.home-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Description text below the title */
+.home-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* Title for featured sections */
+.featured-title {
+    text-align: left;
+    width: 100%;
+    margin: 20px 0 10px 20px;
+    font-size: 2rem;
+}
+
+/* Container for the movie/series list with border */
+.movie-list-container {
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+}
+
+/* Container for the movie/series list */
+.movie-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+/* Individual movie/series item */
+.movie-item {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+/* Image for each movie/series */
+.movie-image {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.movie-image:hover {
+    transform: scale(1.05);
+}
+
+/* Details below each image */
+.movie-details {
+    margin-top: 10px;
+    color: white;
+}
+
+/* Title for each movie/series */
+.movie-title {
+    font-size: 1em;
+}
+
+/* Genres container */
+.movie-genres {
+    margin-top: 5px;
+}
+
+/* Individual genre tag */
+.movie-genre {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #e50914;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: white;
+}

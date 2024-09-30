@@ -1,0 +1,48 @@
+/* src/components/CookieConsent.css */
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.cookie-consent p {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.cookie-consent-buttons {
+    display: flex;
+    gap: 15px; /* Espace entre les boutons */
+}
+
+.cookie-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-button.accept {
+    background-color: #28a745; /* Vert pour accepter */
+    color: white;
+}
+
+.cookie-button.refuse {
+    background-color: #dc3545; /* Rouge pour refuser */
+    color: white;
+}
+
+.cookie-button:hover {
+    opacity: 0.8;
+}

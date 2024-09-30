@@ -1,0 +1,106 @@
+/* src/components/Login.css */
+
+/* Centrage de la page entière */
+.login-page {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    height: 100vh; /* Hauteur de la page complète */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond sombre */
+    padding: 20px;
+}
+
+/* Conteneur du formulaire de login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #222; /* Couleur de fond du formulaire */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombrage subtil */
+    text-align: center; /* Centre le texte */
+    margin: 20px;
+}
+
+/* Titre du formulaire de login */
+.login-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+/* Formulaire de login */
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Organise les champs en colonne */
+    align-items: center; /* Centre les éléments du formulaire */
+}
+
+/* Champs de saisie (email et mot de passe) */
+.login-container input {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333; /* Fond des champs */
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Champs prennent 100% de la largeur du conteneur */
+}
+
+/* Effet de focus sur les champs */
+.login-container input:focus {
+    border-color: #e50914; /* Bordure rouge au focus */
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.5); /* Glow rouge au focus */
+    outline: none;
+}
+
+/* Bouton de login */
+.login-container button {
+    padding: 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e50914; /* Couleur rouge Netflix */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre sous le bouton */
+    width: 100%; /* Le bouton prend toute la largeur disponible */
+}
+
+/* Effet au hover sur le bouton */
+.login-container button:hover {
+    background-color: #ffffff !important; /* Rouge plus clair au survol */
+    transform: scale(1.05); /* Le bouton grandit légèrement */
+}
+
+/* Effet lors du clic sur le bouton */
+.login-container button:active {
+    transform: scale(0.98); /* Effet de réduction lors du clic */
+}
+
+/* Lien pour mot de passe oublié */
+.login-container a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    display: block; /* Prend toute la largeur pour le centrer */
+}
+
+/* Effet au hover sur le lien */
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Icône de l'utilisateur */
+.login-icon {
+    width: 80px;  /* Largeur de l'icône */
+    height: 80px;  /* Hauteur de l'icône */
+    margin-bottom: 20px;  /* Espace sous l'icône */
+    border-radius: 50%;  /* Rend l'icône circulaire */
+    object-fit: cover;  /* Garde les proportions de l'image */
+}

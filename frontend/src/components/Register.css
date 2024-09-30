@@ -1,0 +1,76 @@
+
+
+.form-wrapper {
+  background-color: #333333; /* Couleur de fond */
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre plus marquée */
+  max-width: 400px;
+  width: 100%;
+}
+
+h2.form-title {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, button.register-button {
+  width: 100%; /* S'assure que tous les éléments prennent 100% de la largeur */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button.register-button {
+  background-color: #e50914;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.register-button:hover {
+  background-color: #f40612;
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.already-registered {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.already-registered a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.already-registered a:hover {
+  text-decoration: underline;
+}
+
+/* Icône de l'utilisateur dans le formulaire */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #555;
+  padding: 10px;
+  object-fit: contain;
+}
+
